@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-<title>Responsive Redesign (BRYTE) </title>
+<title>Personas  </title>
 <link rel="stylesheet" href="project-page.css">
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
 <meta charset="utf-8"/>
@@ -15,138 +15,52 @@
 
  
   </div>
-          <h1> Re-designing BRTYE's "Join Us" Page:</h1> <h2> responsive redesign</h2>
-          <div class="summary"> <h3 class="summary"><b> Summary:</b> Analayzed and re-designed a web-page to improve its usability, learnability, and memorability </b>  <br><br> <b> Process: </b> Created a list of the page's areas of improvement & accessibility issues, then created screen-responsive Balsamiq wireframes & Figma designs to address each of the outlined issues. I then used HTML & CSS to create the re-designed page. </b> <br><br><b> Reflection: </b> I was surprised by the number of the page's issues that were not immediately apparent until I tried to use it on my phone. It's especially important when thinking about how these issues impact accessibility, such as color contrast. </div>
-          <h3> Introduction </h3>
-          <p> For this project, I chose to re-design one of the pages (“Join Us”)  for Brown University’s BRYTE (Brown Refugee Youth Tutoring and Enrichment). I chose to focus on this website because I really admire the organization and I noticed there were a few areas of improvement in regards to the site's overall cohesiveness and responsiveness. Since the "Join Us" page is often the first stop for prospective members, I thought it would be especially important to improve this page so that it could leave a better first impression. You can access the current page <a href="https://brownrefugeetutoring.org/JoinUs.html">here </a> or view it below. <br> <br>
-        
-            <h1><iframe  width="50%" height="350" src="https://brownrefugeetutoring.org/JoinUs.html" allowfullscreen></iframe></p> </h1>
-
-            <h3>  Issues </h3>
-          <p> After spending some time interacting with the page, I have compiled a list of areas for improvement based on the standards of usability, learnability, and memorability. I also ran the page through WebAIM WAVE to detect potential accessibility issues.   </p>
-  
-          <h4>  Usability </h4>
-          <ul><li> Text gets cluttered and hard to read when screen width is small. </li>
-            <li> When opening the page on a phone, the navigation bar is very cluttered and hard to use. For general decreased screen width, the "donate" portion of the navigation bar overlaps with other navigation bar links.</li>
-            <li> There could be more contrast between text and background colors for some elements, such as the donate link on the yellow background, and the translucent white hamburger menu. </li>
+          <h1> Vending Machine User Experience </h1> <h2> personas & storyboarding </h2>
+          <section id="intro">
+         
+          <div class="summary"> <h3 class="summary"><b> Summary: </b> Mapped out user experience of campus vending machine <br><br><b> Process: </b> Used information from observing users & conducting interviews to create empathy maps & a storyboard  <br> <br><b> Findings: </b>  The vending machine has room for improving its learnability by clarifying the order of steps when ordering. One way this could be done is by increasing the height & size of the screen displaying the steps    </div>
+    
+          </section>
+            <h3> Interface Overview </h3>
+          <p> This project focuses on the snack vending machine found at Brown University's CIT (Center for Information Technology). The machine offers a selection of various snacks, and is often used by students, staff, faculty, and campus visitors looking for a quick bite. It accepts multiple forms of payment, including cash, debit cards, Flex Points through Brown's student ID, and ApplePay. Users can check the price of a snack by punching in its corresponding number. In order to purchase a snack, a user must first put in their method of payment, wait for its authorization, and press the number of their chosen snack. The vending machine then drops that snack to the bottom slot, where the user can retrieve it.  These instructions are provided step-by-step in a small screen near the bottom of the vending machine. Below is a picture of this vending machine, along with an annotated diagram of the purchasing interface. Hover on the image to expand. </p>
+          <img src="images/vm-sketch.jpg" alt="diagram of vending machine"> </img> 
+          <h3> User Observations & Interviews </h3>
+          <p> I observed three people's interactions with the vending machine, and then asked them a list of questions to further understand their experiences and difficulties regarding using the vending machine's ordering/payment interface.</p>
+          <h4>  Observations </h4>
+          <ul><li> User #1 had a quick interaction and seemed that they knew what they were doing from previous experiences. As soon as this user got to the vending machine, they tapped their debit card, waited a second for its authorization, then pressed the button to get their chosen snack and retrieved it.  </li>
+            <li>User #2 took a while to look through the snack options. They checked the information of several snacks by pressing in their corresponding numbers. They then swiped their student ID and looked to be reading from the screen near the card slot, following the steps to successfully get their chosen snack. </li>
+            <li> User #3 first chose a snack, pressed its number and the order button, and then swiped their card. The student looked to the snack display, seemingly waiting for the snack to drop. They again tried swiping their student ID and waiting. When that didn't work, they tried swiping their ID followed by immediately pressing the snack's number. This also did not work, and a nearby passerby advised them that they need to wait for the card to authorize before pressing the snack number. The student followed this and was finally able to get their snack. The student never seemed to notice the small green screen with instructions, which was located much below eye-level. </li>
             </ul>
-          <h4>  Learnability </h4>
-          <ul><li> The navigation bar has no visual distinguisher for the current page, and the title of the page is not written on the page. </li>
-            <li> There is no clear element to click in order to apply for one of the listed positions. Users have to have read through the text, where the link to the application document is found as a link within the body of text. </li></ul>
+          <h4>  Interview Questions & Summary of Answers</h4>
+          <ul><li> <b>  Why did you decide to use this vending machine?</b> <br> Everyone answered that they wanted a quick snack. User #2 mentioned that the vending machine accepted Flex Points, so they liked that they wouldn't have to spend their own money.  </li>
+            <li><b> Is this your first time using this vending machine? If not, how many times have you used it before? </b><br>User #1 was the only one who had previously used the vending machine. This was their third time, the two previous times being in the past two weeks. </li>
+<li><b>>Did you know which snack you wanted to purchase before coming to the vending machine? </b> <br> User #1 knew exactly which snack they wanted to get. User #2 had no idea, since they did now know which snacks were offered until they got to the machine. User #3 knew they wanted chips before seeing the options, but did not have a specific brand/flavor in mind.</li>
+       <li> <b>Did you check the price of the snack before purchasing it? If not, do you know how to check the price? </b><br> User #1 had to check the price the first time they used the machine, but did not to check it this time because they already knew how much it cost. User #2 did check the price. User #3 did not but knew how to do so.</li>  
+    <li><b> On a scale of 1-10, how intuitive was the process of purchasing a snack? Explain. How can the process be more intuitive?</b> <br> User #1 rated it as a 8, since it could be hard to know where to start ordering the first time, but it quickly becomes clear once you start. User #2 rated it as a 7, since they had to read the instructions on the screen, and it was not originally clear that the instructions would be located there, which could be fixed by making the screen bigger, brighter, and placing it at eye-level. User #3 rated it as a 4 since there was no clear outline that you needed to swipe first, wait, and then use the keypad to order. User #1 and #3 both suggest writing out the steps on the vending machine.‍ </li> 
 
-         
-            <h4>  Memorability </h4>
-          <ul><li> There are a lot of different colors, which is not good for memorability and creating a cohesive page. </li>
-            <li> For most screen sizes, the majority of the images are obscured with text on top. </li>
-              <li> Logos can be important parts of a site's theme, but some parts of the BRYTE's logo on the navigation bar are hidden when screen height is decreased.  </li>
-              <li> Longer chunks of text which could be broken up with the use of icons. </li></ul>
- 
-         
-              <h4>  WAVE Results </h4>
-          <p>
-          WAVE results included several empty links, corresponding social media icons on the bottom of the page. This could easily be fixed by replacing the empty link text with the proper links to the organization's social media accounts. Another highlighted issue is an image's alt text, which can be added as an image property in the HTML file.  
- Another issue presented was a low-contrast error for the white "Donate" text on top of a yellow background, which I have already listed above as a usabillity issue.
-
-</p>
-            <h3> Lo-Fi Design</h3>
-            <p> Using Balsamiq, I created lo-fi designs for a re-designed web-page that addresses the issues listed above. There are seperate lo-fi designs for phone, tablet, and desktop screen sizes in order to see how the page layout adapts to different screen sizes. Each of the diagrams is labeled with the corresponding number to the issue that it addresses, as detailed in the table below.  </p>
+</ul>
+            
+            <h3> Persona Maps </h3>
+            <p> Using these user observations and interview answers, I created two empathy maps that outline the actions, words, emotions, and thoughts of two different personas that would use this vending machine.   </p>
             <div class="img-row">
 
               <div class="diagram">
-                <h4> Mobile View </h4>
-                <img src="images/phone-lofi.png" alt="phone view"> </img> 
+                <h4> Thorough Thelma </h4>
+                <p>  Thelma is a CS student who is interacting with this vending machine for the first time. She has a 10-minute break between work and her next class, which are both located at the CIT, so she decides to get a snack. She cares both about taste and saving money, so she takes her time comparing the different options. She does not intuitively know the purchasing process, so she carefully look for and read instructions. <br> <b> Why Thelma?: </b>Thelma's concern with saving money is representative of a lot of college students, who are the main consumers of this vending machine.‍ <br> <b>Interface problems:</b> Since the prices are not written out on the display, it takes a long time to compare each snack's price one-by-one. </p>
+                <img src="images/Persona2.jpg" alt="thelma's persona map"> </img> 
               </div>
       <div class="diagram">
-          <h4> Tablet View </h4>
-          <img src="images/tablet-lofi.png" alt="tablet view"> </img>
+          <h4> Tired Tanya </h4>
+          <p> Tanya is working on a CS project in the middle of the night and is starting to feel tired. She decides to get an energy drink from the vending machine to help her stay up until she finishes her project.<br> <b> Why Tanya?:</b>  Often, people use a vending machine because of their convenience and to save time from going to a store. Like many others who would choose to use this vending machine, Tanya is in a rush. <br> <b>Interface problems: </b>The instructions screen is not clear or eye-catching, so Tanya is not aware of the step-by-step purchasing process. She does not know that she must wait for her card to authorize before pressing the snack number and it takes her a while to learn this. The process takes her much longer than she anticipates. </p>
+          <img src="images/Persona1.jpg" alt="tanya's persona map"> </img>
       </div>
-      <div class="diagram">
-        <h4> Desktop View </h4>
-        <img src="images/desktop-lofi.png" alt="desktop view"> </img>
-    </div>
+    
    
 
       </div>
-
-      <table>
-        <tr>
-          <th>Label</th>
-          <th>Description of change</th>
-          <th>Which of the above issues does this address?</th>
-        </tr>
-        <tr>
-          <td>1</td>
-          <td>Responsive 'hamburger' menu -- once screen width is too small to display all the menu options in one line, this menu will appear, which can be pressed to reveal the menu options vertically. This will most be used within the phone view. </td>
-          <td>Usability -- this addresses the issue of the cluttered, overlapping navigation bar within the phone view, making it much easier to use. </td>
-        </tr>
-        <tr>
-          <td>2</td>
-          <td>Instead of writing headings on top of photos, have them in seperate sections where they do not overlap. </td>
-          <td>Memorability -- the text will no longer obscure the images, which will help create a more memorable page. </td>
-        </tr>
-        <tr>
-          <td>3</td>
-          <td>Add buttons that allow user to apply to specific positions</td>
-          <td>Learnability -- instead of having to read through a lot of text in order to find the link to apply, the button is a clear element that simplifies the process.</td>
-        </tr>
-        <tr>
-          <td>4</td>
-          <td>Logo height spans the length of the navigation bar</td>
-          <td>Memorability -- the logo will no longer be cut off. </td>
-        </tr>
-        <tr>
-          <td>5</td>
-          <td>Add email icon that links to the organization's email</td>
-          <td>Memorability -- breaks off chunk of text by using icon instead. </td>
-        </tr>
-        <tr>
-          <td>6</td>
-          <td>The current page is highlighted in the navigation bar & its title is written on top of the page.</td>
-          <td>Learnability -- this makes it much easier for user to know which page they are currently on. </td>
-        </tr>
-        <tr>
-          <td>7</td>
-          <td>Link to 'Donate' page does not overlap with rest of navigation bar, and will use the same color scheme as rest of page, which has better color contrast</td>
-          <td>Usability -- donate link is easier to read and click </td>
-        </tr>
-      </table>
-            <h3> Hi-Fi Design</h3>
-
-
-           <p> Using Figma, I created a style guide and hi-fi designs for desktop, tablet, and phone screen sizes. The color palette is based off of different opacities of the red in BRYTE's current logo. You can access the Figma file below with <b> detailed annotations on the page's hiearchy and specific layout elements. </b> The majority of the annotations on the phone screen are consistent across the devices, with the exception of the expanded navigation bar for the desktop. These differences are highlighted through the annotations on the desktop view.</p>
-             <h1><iframe  width="50%" height="450" src="https://www.figma.com/embed?embed_host=share&url=https%3A%2F%2Fwww.figma.com%2Ffile%2FQ1rbMC2mfABEnV2D1jaoFB%2FBRYTE%3Fnode-id%3D0%253A1%26t%3DabjGs1K4JSuvlWK2-1" allowfullscreen></iframe> </h1> 
-            <p> You can also view the style guide and un-annotated versions of each design as images below. Hover on each image to inscrease its size. </p>
-            <div class="style-guide">
-            <h4> Style Guide </h4>
-            
-            <img src="images/style-guide.png" alt="style guide"> </img>
-          </div>
-          <div class="img-row">
-            <div class="diagram">
-            <h4> Mobile View </h4>
-            <img src="images/phone-hifi.png" alt="phone view"> </img>
-        </div>
-
-        <div class="diagram">
-          <h4> Tablet View </h4>
-          <img src="images/tablet-hifi.png" alt="tablet view"> </img>
-      </div>
-
-
-        <div class="diagram">
-    <h4> Desktop View </h4>
-    <img src="images/desktop-hifi.png" alt="desktop view"> </img>
-  </div>
-</div>
-
-    </div>
-            <h3> Deployed Page</h3>
-            <p> Access the re-designed page <a href="https://happyhawk567.github.io/Responsive/">here </a> or view it below.
-            <br></p>
-              <h1>  <iframe width="50%" height="500px" src="https://happyhawk567.github.io/Responsive/" title="" frameborder="0"allowfullscreen></iframe> </h1> 
-
-
-
+<h3> Storyboard </h3>
+      <p>I then imagined the possible step-by-step journey of Thorough Thelma (Persona #1)'s experience with the vending machine, including her motivation, ordering process, and outcome. I represented this journey through a storyboard comprised of six sketched panels. </p>
+      <img src="images/storyboard.jpg" alt="thelma's storyboard"> </img> 
 </div>
     
 </body>
